@@ -1,0 +1,5 @@
+print("练习三")
+name = input("你好，请输入你的名字：")
+school = input("请输入你的学校名称：")
+old = input("请输入你的年龄：")
+print(f"你好，{school}的{name}，你今年{old}岁，开始今天的练习三吧！")
