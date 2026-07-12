@@ -7,7 +7,6 @@
 - 创建项目目录
 - 创建虚拟环境
 - 编写并运行第一个 Python 程序
-# ai-intern-journey
 
 ## Day2 学习内容
 - 基础函数
