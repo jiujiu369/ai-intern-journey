@@ -22,5 +22,4 @@
 -	git pull	拉取远程更新
 	git branch	查看所有分支，带*的就是你当前所在的分支
 	git branch day3	创建一个叫dday3的新分支
-
-
+- 
