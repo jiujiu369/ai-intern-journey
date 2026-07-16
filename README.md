@@ -17,3 +17,8 @@
 - codex的安装并可以使用
 - git指令的学习
 - 
+## Day4 学习内容
+- Linux核心指令
+- 了解HTTP协议与API基础理论
+- json文件格式
+- 实操接口调用（https://jsonplaceholder.typicode.com/）
