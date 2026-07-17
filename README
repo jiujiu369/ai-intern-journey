@@ -24,6 +24,10 @@
 - 实操接口调用（https://jsonplaceholder.typicode.com/）
 
 ## Day5 学习内容
-- 
-- 
-- 
+- RAG完整链路
+- txt、md、docx、pdf四种常用文档解析方法
+		先通过pip install PyPDF2 python-docx安装：专门处理PDF和word.docx文件的Python第三方库
+- 彻底理解文本噪声对 RAG 检索准确率的负面影响
+- 掌握工业级 6 大文本清洗操作
+- 封装一套可复用的「文档解析 + 文本清洗」通用工具脚本
+- 支持单文件处理 + 文件夹批量处理
