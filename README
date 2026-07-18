@@ -1,33 +1,40 @@
 # AI Intern Journey
 
-这是我的 AI 工程师实习 40 天冲刺仓库。
-
-## Day1 学习内容
+#	Day1 学习内容
 - 完成 Python 和 Git 环境检查
 - 创建项目目录
 - 创建虚拟环境
 - 编写并运行第一个 Python 程序
 
-## Day2 学习内容
+#	Day2 学习内容
 - 基础函数
 - 类的基础
 - 文件读取与写入
 - 异常处理
-## Day3 学习内容
+#	Day3 学习内容
 - codex的安装并可以使用
 - git指令的学习
 - 
-## Day4 学习内容
+#	Day4 学习内容
 - Linux核心指令
 - 了解HTTP协议与API基础理论
 - json文件格式
 - 实操接口调用（https://jsonplaceholder.typicode.com/）
 
-## Day5 学习内容
+#	Day5 学习内容
 - RAG完整链路
 - txt、md、docx、pdf四种常用文档解析方法
-		先通过pip install PyPDF2 python-docx安装：专门处理PDF和word.docx文件的Python第三方库
+	先通过pip install PyPDF2 python-docx安装：专门处理PDF和word.docx文件的Python第三方库
 - 彻底理解文本噪声对 RAG 检索准确率的负面影响
 - 掌握工业级 6 大文本清洗操作
 - 封装一套可复用的「文档解析 + 文本清洗」通用工具脚本
 - 支持单文件处理 + 文件夹批量处理
+
+#	Day6 学习内容
+- 深度掌握RAG三大核心底层概念：Token、Embedding向量化、余弦相似度
+- 理解线上Embedding API调用逻辑，实操apikl、DeepSeek双平台接口
+- 排查网防火墙拦截、模型不匹配、API鉴权等线上接口报错问题
+- 掌握离线本地Embedding方案，使用bge-small-zh-v1.5中文模型实现无网络、无密钥向量化
+- 手写实现余弦相似度算法，透彻理解语义打分原理，告别封装工具黑盒调用
+- 封装三大解耦代码模块：本地向量生成模块、相似度计算模块、交互式测试模块
+- 完成自定义文本语义相似度对比实验，验证模型语义识别能力，打通RAG检索底层逻辑

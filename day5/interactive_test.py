@@ -2,7 +2,7 @@ import os
 import sys
 from pathlib import Path
 
-# 让脚本可以直接导入 day5 目录下的模块
+# 可以根据输入文件的地址，解析文件
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from utils import process_single_file
