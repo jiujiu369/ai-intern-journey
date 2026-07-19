@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 
 # 加载轻量中文向量模型，首次运行自动下载到本地，断网也能用
-model = SentenceTransformer("BAAI/bge-small-zh-v1.5")
+model = SentenceTransformer("BAAI/bge-base-zh-v1.5")
 
 def get_local_embedding(text: str) -> list[float]:
     """
@@ -11,4 +11,4 @@ def get_local_embedding(text: str) -> list[float]:
     vec = model.encode(text)
     return vec.tolist()
 
-# 自测入口
+

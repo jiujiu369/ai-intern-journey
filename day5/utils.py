@@ -1,7 +1,7 @@
 ## 根据文件扩展名获取对应的解析器
 import os
-from document_parser import parse_txt_md, parse_pdf, parse_docx
-from text_cleaner import full_text_clean
+from .document_parser import parse_txt_md, parse_pdf, parse_docx
+from .text_cleaner import full_text_clean
 def get_parser(file_path: str):
     suffix = file_path.split(".")[-1].lower()
     if suffix in ["txt", "md"]:
@@ -36,3 +36,23 @@ def process_folder(folder_path: str) -> list:
                 })
     return res
 
+
+## 清洗后的长文本切分片段，用于向量入库（day7）
+def split_chunk(text: str, chunk_size=300, overlap=60) -> list[str]:
+    """
+    清洗后的长文本切分片段，用于向量入库
+    :param text: full_text_clean 清洗完成的全文
+    :param chunk_size: 单块最大字符
+    :param overlap: 块重叠字符，防止上下文断裂
+    :return: 文本片段列表
+    """
+    chunks = []
+    start = 0
+    total_len = len(text)
+    while start < total_len:
+        end = start + chunk_size
+        seg = text[start:end].strip()
+        if seg:
+            chunks.append(seg)
+        start += chunk_size - overlap
+    return chunks
