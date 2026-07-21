@@ -10,7 +10,7 @@ import chromadb
 from chromadb.api.types import Documents, EmbeddingFunction, Embeddings
 
 # 导入Day6本地向量化
-from day6.embedding_local import get_local_embedding
+from day6_embedding.embedding_local import get_local_embedding
 # 导入Day5文档处理全套工具
 from day5.utils import process_single_file, process_folder, split_chunk
 

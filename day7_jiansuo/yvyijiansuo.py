@@ -6,7 +6,7 @@ sys.path.insert(0, root_path)
 
 import chromadb
 from chromadb.api.types import Documents, EmbeddingFunction, Embeddings
-from day6.embedding_local import get_local_embedding
+from day6_embedding.embedding_local import get_local_embedding
 from day5.utils import process_single_file, split_chunk
 
 
